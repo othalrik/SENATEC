@@ -1,0 +1,122 @@
+footer{
+    position: relative;
+    background: var(--cinza-claro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 0;
+
+
+}
+.footer_titulo{
+    color: var(--azul-escuro);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+}
+.footer_subtitulo{
+    margin-top: 20px;
+    color: var(--cinza);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;  
+}
+.footer_formulario{
+    margin: 40px  0 32px;
+}
+.footer_input{
+    
+    border: solid 1px var(--cinza-medio) ;
+    border-radius: 8px;
+    width: 360px;
+    height: 48px;
+    padding-left: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+
+}
+.footer_input::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+ .footer_botao{
+    background-color: var(--vermelho);
+    color: var(--branco);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    width: 116px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+
+    
+}
+.footer_copyrigth{
+    color: var(--cinza-intermediario);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+ .PopUp-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+    display: none;
+
+}
+ .PopUp-Mensagem{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 33%;
+    height: 100px;
+    background-color: var(--branco);
+    border-radius: 16px;
+    z-index: 2;
+    color: var(--azul-escuro);
+    font-size: 16px;
+    
+}
+.PopUp-Mensagem p {
+    position: absolute;
+    top: calc(50% - 11px);
+    margin: 0 32px;
+    
+}
+.PopUp-mensagem_fechar{
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+
+}
+@media screen and (max-width:490px) {   
+    footer{
+        padding: 48px 16px;
+    }
+    .footer_formulario{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        /* align-items: center; */
+    }
+    .PopUp-Mensagem{
+        width: 60%;
+    }
+    .PopUp-Mensagem p{
+        margin: 0 16px;
+    }}

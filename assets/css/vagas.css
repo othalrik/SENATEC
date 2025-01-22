@@ -1,0 +1,91 @@
+.vagas{
+    margin: 96px 112px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.vagas span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 28px;
+    border-radius: 16px;
+    background-color: var(--vermelho-claro);
+    color: var(--vermelho);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    
+}
+.vagas_titulo{
+    color: var(--azul-escuro);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+}
+.vagas_paragrafo{
+    color: var(--cinza);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+.vagas_img{
+    margin: 64px 0 0;
+    width: 100%;
+}
+.vagas-area{
+    width: 768px;
+    margin-top: 64px;
+}
+.vagas-area--titulo{
+    margin-bottom: 32px;
+    color: var(--azul-escuro);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+
+}
+.vagas-profissao{
+    padding: 24px;
+    margin-bottom: 24px;
+    border: solid 1px var(--cinza-medio);
+    border-radius: 16px;
+}
+.vagas-profissao--titulo{
+    margin-bottom: 32px;
+    color: var(--azul-escuro);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+
+}
+.vagas-profissao--jornada, .vagas-profissao--salario{
+    display: inline-block;
+    color: var(--cinza);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.vagas-profissao--salario{
+    margin-left: 24px;
+}
+@media screen and (max-width:940px) {
+    .vagas-area {
+        width: 90%;
+    }
+    
+}
+@media screen and (max-width:490px){
+    .vagas{
+        margin: 32px;
+        gap: 16px;
+    }
+    .vagas_titulo{
+        margin-top: 32px;
+        
+    }
+    .vagas-area{
+        width: 90%;
+    }
+}

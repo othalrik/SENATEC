@@ -1,0 +1,133 @@
+.sobreNos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "sobreNos sobreNos sobreNos sobreNos"
+    "titulo titulo titulo titulo"
+    "paragrafo paragrafo paragrafo paragrafo"
+    "projetos colaboradores downloads reviews"
+    ;
+    margin: 96px 112px;
+    gap: 32px;
+    justify-items: center;
+    text-align: center;
+
+
+    
+
+
+}
+.sobreNos span {
+    grid-area: sobreNos;
+    color: var(--vermelho);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+.sobreNos_titulo{
+    grid-area: titulo;
+    color: var(--azul-escuro);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+
+}
+.sobreNos_paragrafo{
+    grid-area: paragrafo;
+    color: var(--cinza);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0px 60px;
+
+}
+.sobreNos_projetos{
+    grid-area: projetos;
+}
+.sobreNos-numeros{
+    display: flex;
+    flex-direction: column;
+    gap: 12px ;
+    align-items:start;
+}
+.sobreNos_colaboradores{
+    grid-area: colaboradores;
+}
+.sobreNos_downloads{
+    grid-area: downloads ;
+
+}
+.sobreNos_reviews {
+    grid-area: reviews;
+}
+.sobreNos_numeros-numero{
+    color: var(--vermelho);
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 72px;
+
+}
+.sobreNos_numeros-titulo{
+    color: var(--azul-escuro);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+.sobreNos_numeros-paragrafo{
+    text-align: justify;
+    color: var(--cinza);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-right:10px;
+}
+@media screen and (max-width:940px){
+    .sobreNos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "sobreNos sobreNos "
+            "titulo titulo "
+            "paragrafo paragrafo "
+            "projetos colaboradores "
+            "downloads reviews";
+        margin: 96px 112px;
+        gap: 24px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:490px){
+    .sobreNos{
+        margin: 32px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, auto);
+        grid-template-areas:
+            "sobreNos "
+            "titulo "
+            "paragrafo "
+            "projetos"
+            "colaboradores"
+            "downloads"
+            "reviews";
+    }
+    .sobreNos_paragrafo{
+        padding: 0;
+        text-align: auto;
+        font-weight: 0;
+        font-size: 16px;
+        line-height: 24px;
+        padding-right:10px;
+    }
+
+    .sobreNos_numeros-paragrafo{
+        text-align: auto;
+        color: var(--cinza);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        padding-right:0px;
+    }
+    
+}
